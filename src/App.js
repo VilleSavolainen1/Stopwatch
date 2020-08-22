@@ -1,24 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import Stopwatch from "./components/stopwatch";
 
 function App() {
+  const [isrunning, setIsrunning] = useState(false);
+  const [start, setStart] = useState(0);
+  const [time, setTime] = useState(0);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Stopwatch
+        isrunning={isrunning}
+        setIsrunning={setIsrunning}
+        start={start}
+        setStart={setStart}
+        time={time}
+        setTime={setTime}
+      />
     </div>
   );
 }
