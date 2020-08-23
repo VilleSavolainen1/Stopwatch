@@ -5,35 +5,31 @@
 }
 
 .container {
-  display: inline-block;
   color: rgb(100, 200, 250);
-  font-size: 100px;
-  margin: 0 auto;
-  border: 1px solid rgb(100, 200, 250);
-  width: 500px;
-  height: 180px;
-  border-radius: 20px;
+  font-size: 350px;
 }
 
-.button {
-  width: 100px;
-  height: 35px;
-  margin: 5px;
-  background-color: rgb(100, 200, 250);
-  border-color: rgb(100, 200, 250);
-  border-radius: 10px;
-  transition: all 0.2s;
-  font-size: 20px;
-}
-
-.button:hover {
-  transform: scale(1.05);
-  cursor: pointer;
+.clock {
+  margin: 0px 60px 0px 0px;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.info-text {
+  font-size: 30px;
+  color: rgb(146, 146, 146);
+}
+
+@media (max-width: 800px){
+  .container {
+    font-size: 80px;
+  }
+  .clock {
+    margin: 0 auto;
+  }
 }
 
