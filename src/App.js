@@ -5,7 +5,9 @@ import Stopwatch from "./components/stopwatch";
 function App() {
   const [isrunning, setIsrunning] = useState(false);
   const [time, setTime] = useState(0);
+  const [runned, setRunned] = useState(false);
 
+  console.log(runned)
   return (
     <div>
       <Stopwatch
@@ -13,6 +15,8 @@ function App() {
         setIsrunning={setIsrunning}
         time={time}
         setTime={setTime}
+        runned={runned}
+        setRunned={setRunned}
       />
     </div>
   );

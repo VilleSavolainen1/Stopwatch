@@ -2,19 +2,37 @@ import React, { useEffect } from "react";
 import KeyboardEventHandler from "react-keyboard-event-handler";
 import "../App.css";
 
-const Stopwatch = ({ isrunning, setIsrunning, time, setTime }) => {
+const Stopwatch = ({ isrunning, setIsrunning, time, setTime, runned, setRunned }) => {
+
   const startTimer = () => {
-    !isrunning ? setIsrunning(true) : setIsrunning(false);
+    if(!isrunning){
+      setIsrunning(true)
+      console.log("isrunning")
+    }else {
+      setIsrunning(false)
+      console.log("notrunning")
+    }
   };
 
+ 
   useEffect(() => {
     let interval = null;
     if (isrunning) {
       interval = setInterval(() => {
         setTime((time += 1));
       }, 100);
-    } else if (!isrunning && time !== 0) {
+      if(runned){
+        clearInterval(interval)
+        setTime(0)
+        setIsrunning(false)
+      }
+    } else if (!isrunning && time !== 0 && !runned) {
       clearInterval(interval);
+      setRunned(true)
+    } else if (!isrunning && runned){
+      setRunned(false)
+      clearInterval(interval)
+      setTime(0)
     }
     return () => clearInterval(interval);
   }, [isrunning]);
