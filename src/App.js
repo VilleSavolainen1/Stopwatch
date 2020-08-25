@@ -7,7 +7,6 @@ function App() {
   const [time, setTime] = useState(0);
   const [runned, setRunned] = useState(false);
 
-  console.log(runned)
   return (
     <div>
       <Stopwatch

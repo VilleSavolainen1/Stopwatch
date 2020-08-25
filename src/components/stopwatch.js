@@ -19,7 +19,7 @@ const Stopwatch = ({
     if (isrunning) {
       interval = setInterval(() => {
         setTime((time += 1));
-      }, 100);
+      }, 10);
       if (runned) {
         clearInterval(interval);
         setTime(0);
@@ -36,14 +36,15 @@ const Stopwatch = ({
     return () => clearInterval(interval);
   }, [isrunning]);
 
-  let millisecond = ("0" + time).slice(-1);
-  let second = ("0" + (Math.floor(time / 10) % 60)).slice(-2);
-  let minute = ("0" + (Math.floor(time / 600) % 100)).slice(-2);
+  let hundredths = ("0" + time).slice(-1)
+  let decisecond = ("0" + (Math.floor(time / 10))).slice(-1)
+  let second = ("0" + (Math.floor(time / 100) % 60)).slice(-2);
+  let minute = ("0" + (Math.floor(time / 6000) % 100)).slice(-2);
 
   return (
     <div className="container">
       <div className="clock">
-        {minute}:{second}:{millisecond}
+        {minute}:{second}:{decisecond}{hundredths}
       </div>
       <div className="info-text">Press "Space" to start and stop.</div>
       <KeyboardEventHandler
