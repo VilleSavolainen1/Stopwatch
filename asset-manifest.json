@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/VilleSavolainen1/Stopwatch/static/css/main.cfcd8a21.chunk.css",
-    "main.js": "/VilleSavolainen1/Stopwatch/static/js/main.b52ee53e.chunk.js",
-    "main.js.map": "/VilleSavolainen1/Stopwatch/static/js/main.b52ee53e.chunk.js.map",
-    "runtime-main.js": "/VilleSavolainen1/Stopwatch/static/js/runtime-main.3ff961f5.js",
-    "runtime-main.js.map": "/VilleSavolainen1/Stopwatch/static/js/runtime-main.3ff961f5.js.map",
-    "static/js/2.399c1457.chunk.js": "/VilleSavolainen1/Stopwatch/static/js/2.399c1457.chunk.js",
-    "static/js/2.399c1457.chunk.js.map": "/VilleSavolainen1/Stopwatch/static/js/2.399c1457.chunk.js.map",
-    "index.html": "/VilleSavolainen1/Stopwatch/index.html",
-    "precache-manifest.b7f3ee9683221a469985ab6083a1ffb3.js": "/VilleSavolainen1/Stopwatch/precache-manifest.b7f3ee9683221a469985ab6083a1ffb3.js",
-    "service-worker.js": "/VilleSavolainen1/Stopwatch/service-worker.js",
-    "static/css/main.cfcd8a21.chunk.css.map": "/VilleSavolainen1/Stopwatch/static/css/main.cfcd8a21.chunk.css.map",
-    "static/js/2.399c1457.chunk.js.LICENSE.txt": "/VilleSavolainen1/Stopwatch/static/js/2.399c1457.chunk.js.LICENSE.txt"
+    "main.css": "/Stopwatch/static/css/main.cfcd8a21.chunk.css",
+    "main.js": "/Stopwatch/static/js/main.b52ee53e.chunk.js",
+    "main.js.map": "/Stopwatch/static/js/main.b52ee53e.chunk.js.map",
+    "runtime-main.js": "/Stopwatch/static/js/runtime-main.c7f13b24.js",
+    "runtime-main.js.map": "/Stopwatch/static/js/runtime-main.c7f13b24.js.map",
+    "static/js/2.399c1457.chunk.js": "/Stopwatch/static/js/2.399c1457.chunk.js",
+    "static/js/2.399c1457.chunk.js.map": "/Stopwatch/static/js/2.399c1457.chunk.js.map",
+    "index.html": "/Stopwatch/index.html",
+    "precache-manifest.e48ad248cd415e5874769302af1bdf37.js": "/Stopwatch/precache-manifest.e48ad248cd415e5874769302af1bdf37.js",
+    "service-worker.js": "/Stopwatch/service-worker.js",
+    "static/css/main.cfcd8a21.chunk.css.map": "/Stopwatch/static/css/main.cfcd8a21.chunk.css.map",
+    "static/js/2.399c1457.chunk.js.LICENSE.txt": "/Stopwatch/static/js/2.399c1457.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ff961f5.js",
+    "static/js/runtime-main.c7f13b24.js",
     "static/js/2.399c1457.chunk.js",
     "static/css/main.cfcd8a21.chunk.css",
     "static/js/main.b52ee53e.chunk.js"
